@@ -22,6 +22,7 @@ frame.Show(True)
 #This is always the last line of a wxPython app.
 app.MainLoop()
 
+# ----------- Exercises Below -----------------
 
 #1. Change the title of your Frame to something new.
 

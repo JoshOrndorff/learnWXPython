@@ -36,6 +36,8 @@ frame.Show()
 app.MainLoop()
 
 
+# ----------- Exercises Below -----------------
+
 #0. Read through the main program and get a rough understanding of what it does.
 
 #1. Change the position of the frame. (You've done this before, but I want you to stay sharp.)

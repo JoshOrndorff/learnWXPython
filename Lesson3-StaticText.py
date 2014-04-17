@@ -18,6 +18,9 @@ frame.Show()
 
 app.MainLoop()
 
+
+# ----------- Exercises Below -----------------
+
 #1. Did you figure out what was missing on line 4?
 #   HINT: Does python know what a frame is automatically?
 
