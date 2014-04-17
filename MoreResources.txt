@@ -1,2 +1,0 @@
-wiki.wxpython.org
-http://zetcode.com/wxpython/
