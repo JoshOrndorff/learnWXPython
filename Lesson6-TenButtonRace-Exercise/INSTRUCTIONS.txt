@@ -1,0 +1,18 @@
+In this exercise you will use what you have learned in the first five lessons to make a program called the ten button race.
+
+This program should open a window with the title "Ten Button Race", and a button in the middle that says start.
+
+When the user clicks the start button, the start button disappears and a new button labeled "Button 1" appears somewhere in the window, and the program notes the current time.
+
+When the user clicks Button 1, it disappears and Button 2 appears somewhere in the window. This goes on and on until finally the user clicks Button 10, and the program tells the user how long it took them to click all ten buttons.
+
+In order to keep track of the time, you will need to import time and use the time.time() function which returns the number of seconds since January 1st 1970.
+
+If you need some help getting started, there is a skeleton program in this directory called tenButtonRaceSkeleton.py
+
+ ** Optional Enhancements **
+1. Use random numbers to make the buttons appear at new locations each time.
+2. Show a running clock in the top corner of the window.
+3. Store the buttons in an array and create them with a for loop instead of creating each one individually.
+4. Use a file to keep track of the best time ever for the game.
+5. Before showing the window, use the terminal to ask the user how many buttons they want in their race. If you've also made enhancement #4, consider keeping track of the high score for all numbers of buttons.
