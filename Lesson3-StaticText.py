@@ -24,8 +24,8 @@ app.MainLoop()
 #1. Did you figure out what was missing on line 4?
 #   HINT: Does python know what a frame is automatically?
 
-#2. Make that button print "Great! Me Too!" to the screen when it is clicked.
-#   Look back at the last lesson if you need too, but please don't copy-paste the code.
+#2. Make that button print "Great! Me Too!" to the terminal when it is clicked.
+#   Look back at the last lesson if you need to, but please don't copy-paste the code.
 #   Typing it yourself will help you remember.
 
 #3. Insert the following code on line 15.
