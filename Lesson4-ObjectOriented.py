@@ -18,14 +18,14 @@ class CoolerFrame(wx.Frame):
 		wx.Frame.__init__(self, parent, wx.ID_ANY, "Our Title")
 		
 		# Create a new panel that is a member of the frame
-		panel = wx.Panel(self) #Notice I put self in parentheses this time.
+		self.panel = wx.Panel(self) #Notice I put self in parentheses this time.
 
-		# Create a button, and put it in my panel
-		btnClickMe = wx.Button(self, label="Click Me", pos=(20,20))
+		# Create a button, and put it in the panel
+		self.btnClickMe = wx.Button(self.panel, label="Click Me", pos=(20,20))
 
 		# Make the button do something!
 		# Call self.OnClickMe instead of just OnClickMe
-		btnClickMe.Bind(wx.EVT_BUTTON, self.OnClickMe)
+		self.btnClickMe.Bind(wx.EVT_BUTTON, self.OnClickMe)
 
 	# Now the event handler is part of the class.
 	# That means it has to have self as the first argument.
