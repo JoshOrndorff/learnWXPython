@@ -68,3 +68,12 @@ app.MainLoop()
 #4. Do the same for btnMeToo
 
 #5. Your final task is to make btnClickMe disappear when it is clicked.
+
+# A final Note ---
+#
+# In this lesson we used SetLabel to change wx.StaticText widgets and Show to show and hide wx.Buttons.
+# But either method can be used for any widget.
+# For example, we could have used
+#    self.btnClickMe.SetLabel("Don't click me")
+# or 
+#    self.heading.Show(False)
