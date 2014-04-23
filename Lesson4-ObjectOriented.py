@@ -7,8 +7,8 @@ import wx
 # to represent our GUIs with classes. This program is the same as Lesson 2 but object oriented.
 
 # We define a class called CoolerFrame because it is cooler than the original wx.Frame
-# Because we put wx.Frame is parentheses instead of object, this class "inherits" from wx.Frame
-# Inherits means that this frame has everything a wx.Frame has, plus the stuff we add.
+# Because we put wx.Frame is parentheses on line 12 instead of object, this class "inherits" from wx.Frame
+# Inherits means that the CoolerFrame has everything a wx.Frame has, plus the stuff we add.
 class CoolerFrame(wx.Frame):
 	# Remember __init__ is the constructor function. It sets up or "initializes" the new CoolerFrame
 	def __init__(self, parent):
@@ -28,7 +28,7 @@ class CoolerFrame(wx.Frame):
 		btnClickMe.Bind(wx.EVT_BUTTON, self.OnClickMe)
 
 	# Now the event handler is part of the class.
-	# That means it has to have self as the first argument
+	# That means it has to have self as the first argument.
 	def OnClickMe(self, e):
 		print "Yay! You clicked it."
 	
