@@ -5,7 +5,7 @@
 
 class TenButtonFrame(wx.Frame):
 	def __init__(self, parent):
-		wx.Frame.__init__(self, wx.ID_ANY, "Title Here")
+		wx.Frame.__init__(self, parent, wx.ID_ANY, "Title Here")
 		
 		#Make a new Panel
 		
