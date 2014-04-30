@@ -51,7 +51,7 @@ app.MainLoop()
 #   Change the program to use the version in the assets directory instead.
 #   Then delete the one in the root directory to make it look nicer and be sure your code works.
 
-#2. Because images must always be converted to bitmaps, these staps are frequently combined into a single line.
+#2. Because images must always be converted to bitmaps, these steps are frequently combined into a single line.
 #   To do this *move* the .ConvertToBitmap() method from line 20 to the end of line 16.
 #   If you like, delete my comments from lines 17-19. Your choice.
 #
