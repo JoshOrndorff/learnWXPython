@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import wx
 
-# In this lesson you wil learn about the wx.TextCtrl, and simple message boxes.
+# In this lesson you will learn about the wx.TextCtrl, and simple message boxes.
 # You are familiar with both of these widgets, and you will likely find them very useful.
 
 class HelloFrame(wx.Frame):
