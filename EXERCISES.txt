@@ -1,1 +1,50 @@
-Coming Soon
+These exercises do not go in any particular order. Complete them whenever you know
+the skills necessary. Occasionally they may require a minor skill that was not taught
+directly in the lessons. You may be able to infer it, or you may have to search the
+internet or ask for help.
+
+The basic task is stated right away, and ideas to enhance it are listed afterward.
+
+
+--------------------------------------
+#1. Write a graphical version of the height converter program. Use text boxes for
+feet and inches, and a StaticText for centimeters.
+
+A. Update the output as the user types input with no submit button by using an 
+EVT_TEXT event (http://docs.wxwidgets.org/trunk/classwx_text_ctrl.html)
+
+B. Include a checkbox labeled "round the answer" to only display a few decimal places.
+
+C. Allow the program to convert from English to SI units or the other way around.
+
+
+
+
+--------------------------------------
+#2. Create a simple TicTacToe game where players take turns clicking where the X and
+O should go.
+
+A. Make the program detect when one player has won the game.
+
+B. Make the player keep track of how many wins.
+(eg. a xw.StaticText saying "player 1: 4 wins    player 2: 17 wins")
+
+C. Allow the users to enter names and the win counter to refer to them by name.
+
+D. Allow the users to choose images as their markers instead of just X and O.
+
+E. Create one player mode where the human plays against the computer.
+
+
+--------------------------------------
+#3. Mastermind (http://en.wikipedia.org/wiki/Mastermind_%28board_game%29)
+
+
+--------------------------------------
+#4. I need suggestions here guys! What are some cool project ideas?
+
+
+
+
+--------------------------------------
+For more practice, recreate any of the terminal-based programs you wrote as GUI programs.
