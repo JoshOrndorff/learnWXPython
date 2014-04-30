@@ -37,7 +37,7 @@ class HelloFrame(wx.Frame):
 		# The purpose is to greet the user by name. It is the fancy version of: print "Hello", name
 		
 		# First we get whatever text the user entered in the text box
-		name = self.nameBox.GetLineText()
+		name = self.nameBox.GetValue()
 		
 		# Now we finally greet the user by displaying a message in our response wx.StaticText
 		self.response.SetLabel("Nice to meet you, " + name)
