@@ -10,6 +10,8 @@ The basic task is stated right away, and ideas to enhance it are listed afterwar
 #1. Write a graphical version of the height converter program. Use text boxes for
 feet and inches, and a StaticText for centimeters.
 
+** Enhancements **
+
 A. Update the output as the user types input with no submit button by using an 
 EVT_TEXT event (http://docs.wxwidgets.org/trunk/classwx_text_ctrl.html)
 
@@ -23,6 +25,8 @@ C. Allow the program to convert from English to SI units or the other way around
 --------------------------------------
 #2. Create a simple TicTacToe game where players take turns clicking where the X and
 O should go.
+
+** Enhancements **
 
 A. Make the program detect when one player has won the game.
 
@@ -41,7 +45,22 @@ E. Create one player mode where the human plays against the computer.
 
 
 --------------------------------------
-#4. I need suggestions here guys! What are some cool project ideas?
+#4. Write a program with a text box for you to type text and a convert button that
+converts your text to a secret code. A simple kind of substitution cipher just replaces
+one letter with another (http://en.wikipedia.org/wiki/Substitution_cipher).
+
+** Enhancements **
+
+A. Also include a decode button to change secret code back to normal language
+
+B. Use a fancier cipher than substitution cipher
+
+C. Have an "autodetect" feature like google translate that tries to determine whether
+you have provided plain English or secret code text. You could do this by scanning the
+text for common words like "is", "the", "a", etc.
+
+--------------------------------------
+#5. I need suggestions here guys! What are some cool project ideas?
 
 
 
