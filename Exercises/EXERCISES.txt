@@ -1,0 +1,108 @@
+These exercises do not go in any particular order. Complete them whenever you
+know the skills necessary. Occasionally they may require a minor skill that was
+not taught directly in the lessons. You may be able to infer it, or you may have
+to search the internet or ask for help.
+
+It is best to try the exercises from scratch first. But if you are stuck, many
+of the exercises have a skeleton file that you can reference or build on.
+
+--------------------------------------
+#1. Write a graphical version of the height converter program. Use text boxes
+for feet and inches, and a StaticText for centimeters.
+
+** Enhancements **
+
+A. Update the output as the user types input with no submit button by using an 
+EVT_TEXT event (http://docs.wxwidgets.org/trunk/classwx_text_ctrl.html)
+
+B. Include a checkbox labeled "Round" to only display a few decimal places.
+
+C. Allow the program to convert from English to SI units or the vice-versa.
+
+
+
+
+--------------------------------------
+#2. Create a simple TicTacToe game where players take turns clicking where the X
+and O should go.
+
+** Enhancements **
+
+A. Make the program detect when one player has won the game.
+
+B. Make the player keep track of how many wins.
+(eg. a xw.StaticText saying "player 1: 4 wins    player 2: 17 wins")
+
+C. Allow the users to enter names and the win counter to refer to them by name.
+
+D. Allow the users to choose images as their markers instead of just X and O.
+
+E. Create one player mode where the human plays against the computer.
+
+
+--------------------------------------
+#3. Mastermind (http://en.wikipedia.org/wiki/Mastermind_%28board_game%29)
+
+
+--------------------------------------
+#4. Write a program with a text box for you to type text and a convert button
+that converts your text to a secret code. A simple kind of substitution cipher
+just replaces one letter with another.
+(http://en.wikipedia.org/wiki/Substitution_cipher)
+
+** Enhancements **
+
+A. Also include a decode button to change secret code back to normal language
+
+B. Use a fancier cipher than substitution cipher
+
+C. Have an "autodetect" feature like google translate that tries to determine
+whether you have provided plain English or secret code text. You could do this
+by scanning the text for common words like "is", "the", "a", etc.
+
+--------------------------------------
+#5. Make a graphical calculator like the one that comes with most OSs. It should
+support addition, subtraction, multiplication, and division.
+
+A. Also support square root and squaring.
+
+B. Support trigonometry, and provide raio buttons to select degrees or radians.
+
+--------------------------------------
+#6. A simple game to see how quickly to user can click through ten buttons.
+
+When the user clicks the start button, the start button disappears and a new
+button labeled "Button 1" appears somewhere in the window, and the program notes
+the current time. When the user clicks Button 1, it disappears and Button 2
+appears somewhere in the window. When the user finally clicks Button 10, the
+program tells the user how long it took them to click all ten buttons.
+
+In order to keep track of the time, you will need to import time and use the
+time.time() function which returns the number of seconds since January 1st 1970.
+
+** Enhancements **
+A. Use random numbers to make the buttons appear at new locations each time.
+
+B. Show a running clock in the top corner of the window.
+
+C. Store the buttons in an array and create them with a for loop instead of
+creating each one individually.
+
+D. Use a file to keep track of the best time ever for the game.
+
+E. Before starting the game, ask the user how many buttons to put in the race.
+If you've also made enhancement D, consider keeping track of the high score for
+each number of buttons.
+
+F. Instead of using a standard wx.Button, write your own class raceButton which
+has a property called index or number. This will make it easier to test which
+button was clicked in your event handler.
+
+--------------------------------------
+#7. I need suggestions here guys! What are some cool project ideas?
+
+
+
+
+--------------------------------------
+For more practice, recreate any of the terminal-based programs you wrote as GUI programs.

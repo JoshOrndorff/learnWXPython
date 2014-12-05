@@ -21,7 +21,11 @@ class TenButtonFrame(wx.Frame):
 		self.startTime = time.time()
 		#Make Button One appear
 		
-	#Other event handlers here
+	def OnAnyButton(self, e):
+		clickedButton = e.GetEventObject()
+		clickedIndex = buttons.index(clickedButton)
+		buttons[clickedIndex].Show(False)
+		buttons[clickedIndex + 1].Show(True)
 	
 	#Remember the last event handler needs to print the final time.
 	
