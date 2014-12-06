@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 import wx
 
-# Here is a fairly simple lesson that demonstrates a fun and very useful feature of wx python.
-# We will display some pictures in your programs.
+# Here is a fairly simple lesson that demonstrates a fun and very useful feature
+# of wx python. It will display some pictures in your programs.
 # As usual, you may run the program to see what it does.
 
+# Just for fun, let's extend the wx.Panel class this time instead of wx.Frame.
+# Notice the meaningful name.
 class ImagePanel(wx.Panel):
 
 	def __init__(self, parent):
@@ -32,7 +34,7 @@ app = wx.App(False)
 # Create a regular old wx.Frame
 frame = wx.Frame(None, wx.ID_ANY, "Let's look at some images")
 
-# Create a copy of our new custom Imagepanel and give it frame as a parent
+# Create a copy of our new custom ImagePanel and give it frame as a parent
 panel = ImagePanel(frame)
 
 # Show the frame
