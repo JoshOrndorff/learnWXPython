@@ -42,7 +42,7 @@ class HelloFrame(wx.Frame):
 		# Now we finally greet the user by displaying a message in our response wx.StaticText
 		self.response.SetLabel("Nice to meet you, " + name)
 		
-	def OnSubmitComplex(self, e):
+	def OnSubmitFancy(self, e):
 		# This event handler is used instead after you change the binding on line 30.
 		# This one makes sure the user entered a name.
 		
@@ -85,7 +85,7 @@ app.MainLoop()
 #1. What is the purpose of line 12? Write you answer below. Writing helps clearly identify answers.
 
 #2. The submit button is currently bound to a simple even handler called OnSubmitSimple.
-#   But there is also a fancier event handler called OnSubmitComplex.
+#   But there is also a fancier event handler called OnSubmitFancy.
 #   Change the binding on line 30 to use the fancier event handler and then run the program again.
 
 #3. The last argument on line 58 is wx.OK That tells the program to include an "OK" button.
@@ -108,8 +108,8 @@ app.MainLoop()
 
 #6. Good job on #5. It was a little easy. Now we need to actually call the user Dave.
 #   wx.TextCtrl widgets have a method .SetValue("text here")
-#   Use this message in the complex event handler to call the anonymous user Dave.
+#   Use this message in the fancy event handler to call the anonymous user Dave.
 
-#7. It would be nice it Dave didn't have to click the submit button after we named him.
-#   Even though OnSubmitComplex is an event handler, it can still be called just like any other function.
-#   After we name him Dave, call self.OnSubmitComplex(None)
+#7. It would be nice if Dave didn't have to click the submit button after we named him.
+#   Even though OnSubmitFancy is an event handler, it can still be called just like any other function.
+#   After we name him Dave, call self.OnSubmitFancy(None)
