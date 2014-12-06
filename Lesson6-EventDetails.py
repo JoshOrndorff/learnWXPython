@@ -1,41 +1,73 @@
 #!/usr/bin/env python
-
-#You will experiment with this file by changing it and adding to it.
-#But first just run it and see what it does.
-
-#Now that you have run the file, read through it and look at the exercises below.
-
-#We always have to import wx before we can use it.
 import wx
 
+# By now you're good at binding event handler classes to events. But so far we
+# have bound a new event handler function to each button. In this lesson we'll
+# discover another way to do it.
 
-#In wx we always sart by creating a wx.App. I like to call it "app".
-app = wx.App(False) #False means error messages will print in the normal way.
+# It doesn't have to be called CoolerFrame. Since this is an example, I'll
+# choose a name that reflects that. In general, you should give your classes
+# meaningful names that reflect what they do.
+class ExampleFrame(wx.Frame):
+	# Remember __init__ is the constructor function.
+	def __init__(self, parent):
+	
+		# As usual, we call the original wx.Frame constructor.
+		wx.Frame.__init__(self, parent, wx.ID_ANY, "Adding Numbers", size=(300, 120))
+		
+		# Create a new panel that is a member of the frame
+		self.panel = wx.Panel(self)
 
-# Create a new frame (A frame is often casually called a window).
-frame = wx.Frame(None, wx.ID_ANY, "Hello World")
-	# None means it is top level. It has no parent frame.
-	# wx.ID_ANY is always the second argument. It is just a variable that = -1.
-	# The third argument is the window's title.
+		# Create the static text and buttons
+		self.question = wx.StaticText(self.panel, label="How many should I add to the total?", pos=(20, 20))
+		self.result = wx.StaticText(self.panel, label="Total is: 0", pos=(40, 90))
+		self.btn1 = wx.Button(self.panel, label="1", pos=(20,50))
+		self.btn3 = wx.Button(self.panel, label="3", pos=(120, 50))
 
-# Show the frame.
-frame.Show(True)
 
-# MainLoop makes the app listen for clicks, and other events.
-# This is always the last line of a wxPython app.
+		# Bind the buttons to the event handler
+		self.btn1.Bind(wx.EVT_BUTTON, self.OnClick)
+		self.btn3.Bind(wx.EVT_BUTTON, self.OnClick)
+
+
+		# We will need a variable to keep track of the total.
+		# This does not have anything to do with wxPython, it is just normal OOP.
+		self.total = 0
+
+	# The event handler function
+	def OnClick(self, e):
+		buttonClicked = e.GetEventObject()
+		numToAdd = int(buttonClicked.GetLabel())
+
+		self.total += numToAdd
+
+		self.result.SetLabel("Total is: {}".format(self.total))
+
+
+
+# ----------- Main Program Below -----------------
+
+app = wx.App(False)
+
+frame = ExampleFrame(None) 
+
+frame.Show()
+
 app.MainLoop()
+
+
 
 # ----------- Exercises Below -----------------
 
-#1. Change the title of your Frame to something new.
+#1. Add another button to add 5 to the total.
+#   Note, you don't need to add another event handler function. Isn't that nice?
 
-#2. Rename the variable bound to your frame to something like JoshsFrame.
+#2. Add a button that allows the user to reset the total.
+#   Is it best to make a new event handler in this case?
 
-#3. Add the argument size = (400,100) to the frame constructor on line 16.
-#   What does it do?
-
-#4. Add the argument pos=(1000,300) to the frame constructor on line 16.
-#   What does it do?
-
-#5. I've claimed that wx.ID_ANY is just a variable that equals -1.
-#   Confirm that this is true. (Hint: This is not hard; don't overthink it.)
+#3. It is not ideal to take the number we are adding from  the button's label.
+#   It would be better to write our own button class that extends wx.Button.
+#   Our class will be almost identical, but it will have a variable that stores
+#   An int representing how much we should increase the total by. This allows
+#   us to change the label on the button to something like "Add Three" too.
+#   Write that button class and change the program to use it.
