@@ -25,7 +25,7 @@ class ExampleFrame(wx.Frame):
 		self.btn3 = wx.Button(self.panel, label="3", pos=(120, 50))
 
 
-		# Bind the buttons to the event handler
+		# Bind the buttons to the SAME event handler function
 		self.btn1.Bind(wx.EVT_BUTTON, self.OnClick)
 		self.btn3.Bind(wx.EVT_BUTTON, self.OnClick)
 
@@ -34,15 +34,22 @@ class ExampleFrame(wx.Frame):
 		# This does not have anything to do with wxPython, it is just normal OOP.
 		self.total = 0
 
-	# The event handler function
+	# There is only one event handler function even though there are two buttons.
 	def OnClick(self, e):
+		# We can determine which button is clicked by using GetEventObject()
 		buttonClicked = e.GetEventObject()
+
+		# Now that we know what button was clicked, we can read it's label and
+		# determine how much to add to the total.
 		numToAdd = int(buttonClicked.GetLabel())
 
+		# Finally we can do the adding and update the total.
 		self.total += numToAdd
-
 		self.result.SetLabel("Total is: {}".format(self.total))
 
+		# There are more useful methods like GetEventObject discussed in the
+		# Documentation at http://www.wxpython.org/docs/api/wx.Event-class.html
+		# In my experience GetEventObject is the most commonly used though.
 
 
 # ----------- Main Program Below -----------------
