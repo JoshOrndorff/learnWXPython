@@ -1,16 +1,27 @@
-This tutorial will teach the basics of wxPython by example and experimentation.
+This project is deprecated. You may still find it useful, but my own interest in
+gui programming has shifted to HTML/CSS/Javascript. You may also be interested in
+my other tutorials that are actively maintained.
+
+Python 3:
+https://github.com/JoshOrndorff/LearnPythonByExample
+
+Rholang:
+https://github.com/JoshOrndorff/LearnRholangByExample
+
+----------------
+
+This tutorial begins teach the basics of wxPython by example and experimentation.
 The tutorials are meant to be run, read, modified and completed. For best
-results, change anything and everything you are curious about. Also 
+results, change anything and everything you are curious about.
 
 learnWXPython is written by:
-Josh Orndorff
-admin@joshorndorff.com
-www.joshorndorff.com
+Joshy Orndorff
+admin@joshyorndorff.com
+www.joshyorndorff.com
 
 Additional resources are available around the web:
 http://wiki.wxpython.org
-The official wxPython wiki. It has been down for troubleshooting for a while.
-I'm beginning to wonder if it will ever come back up.
+The official wxPython wiki.
 
 http://zetcode.com/wxpython/
 Another 3rd party tutorial that I've referenced in writing my own tutorial. It
