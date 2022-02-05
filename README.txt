@@ -1,12 +1,5 @@
 This project is deprecated. You may still find it useful, but my own interest in
-gui programming has shifted to HTML/CSS/Javascript. You may also be interested in
-my other tutorials that are actively maintained.
-
-Python 3:
-https://github.com/JoshOrndorff/LearnPythonByExample
-
-Rholang:
-https://github.com/JoshOrndorff/LearnRholangByExample
+gui programming has shifted to HTML/CSS/Javascript.
 
 ----------------
 
@@ -16,7 +9,6 @@ results, change anything and everything you are curious about.
 
 learnWXPython is written by:
 Joshy Orndorff
-admin@joshyorndorff.com
 www.joshyorndorff.com
 
 Additional resources are available around the web:
